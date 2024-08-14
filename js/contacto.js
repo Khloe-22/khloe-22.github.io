@@ -69,6 +69,11 @@ document.getElementById('toggle-footer').addEventListener('click', function() {
     footerPopup.classList.toggle('active');
 });
 
+function toggleMenu() {
+    const nav = document.querySelector('.header__nav');
+    nav.classList.toggle('active');
+}
+
 
 
 

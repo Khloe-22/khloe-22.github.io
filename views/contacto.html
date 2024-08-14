@@ -15,8 +15,15 @@
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">
-               <h2 class="privacidad">ZERO</h2>
+                <h2 class="privacidad">ZERO</h2>
             </div>
+            <div class="toggleMenu">
+                <button class="header__menu-button" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>    
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
@@ -27,7 +34,7 @@
             </nav>
         </div>
     </header>
-   
+
     <!-- Contenedor del mapa -->
     <!-- Botón para mostrar/ocultar el footer en dispositivos móviles -->
     <button id="toggle-footer" class="footer__toggle">Mostrar/Ocultar Footer</button>
@@ -41,76 +48,16 @@
 
     <!-- Footer -->
     <footer class="footer" id="footer-popup">
-        <section class="footer__section">
+        <div class="footer__section">
             <div class="footer__section-container container1">
                 <!-- Contenido del footer como lo tienes -->
                 <!-- Ubicacion, Contacto Directo, Descubre y Ahora, Síguenos -->
             </div>
-        </section>
+        </div>
         <div class="footer__copy">
-            &copy; <span id="current-year"></span> Todos los derechos reservados.
+           &copy;<span id="current-year"></span> Todos los derechos reservados.
         </div>
     </footer>
-
-
-    <!-----
-<footer class="footer">
-    <section class="footer__section">
- 
-        <div class="footer__section-container container1">
-            <h2 class="footer_title">ZERO</h2>
-
-            <article class="footer_section">
-                <h3 class="footer__section-title">Ubicacion</h3>
-
-                <ul class="footer__section-table">
-                    <li class="footer__section-links">
-                        <li><a href="https://goo.gl/maps/BoMW1fSVEovrzJyB8" class="footer__section-link"><i class="fa-solid fa-location-dot"></i> Hoogoorddreef 55, 1101 BE Amsterdam, Países Bajos</a></li>
-                </ul>  
-
-                <h3 class="footer__section-title">Contacto Directo</h3>
-                <ul class="footer__section-table">
-                    <li class="footer__section-links">
-                        <li><a class="footer__section-link" href="mailto:go-4-fit@gmail.com" ><i class="fa-solid fa-envelope"></i>jcorderog78@icloud.com  </a></li>
-                        <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
-                </ul>  
-
-                <h3 class="footer__section-title">DSCUBRE Y AHORA</h3>
-                <ul class="footer__section-table">
-                    <li class="footer__section-links">
-                        <a href="../views/politicaAviso.html" class="footer__section-link">Politica de privacidad</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__section-table">
-                    <li class="footer__section-links">
-                        <a href="../views/politicaAviso.html" class="footer__section-link">Cookies</a>
-                    </li>
-                </ul>
-
-                <ul class="footer__section-table">
-                    <li class="footer__section-links">
-                        <a href="../views/politicaAviso.html" class="footer__section-link">Aviso Legal</a>
-                    </li>
-                </ul>
-            </article>
-
-            <article class="footer__section">
-                <h3 class="footer__section-title">Síguenos</h3>
-                <div class="social__container">
-                    <a href="https://www.facebook.com/profile.php?id=100010402808950" class="social__icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/ftness_life/" class="social__icon"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/juliojump23" class="social__icon"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/julio-cordero-guzman-3b873217b/" class="social__icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </article>
-        </div>
-    </section>
-    <div class="footer__copy" id="footer">
-        copyright <span id="current-year"></span> Todos los derechos reservados.
-    </div>
-</footer>
--->
 
 <script src="../js/contacto.js"></script> 
 

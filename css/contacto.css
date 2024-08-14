@@ -1,88 +1,15 @@
-/*@import url(../styles/styles.css);*/
-
-/* Estilos Generales */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: "Slabo 27px", serif;
-}
-
-/* Estilo del header */
-.header {
-    background-color: #1D293F; 
-    color: #fff;
-    padding: 10px 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-   /* position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;*/
-}
-
-.header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;*/
-}
-
-.header__logo h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-    margin: 0;
-}
-
-.header__nav {
-    display: flex;
-}
-
-.header__nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-} 
-
-.header__nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    /*padding: 10px 15px;
-    margin-left: 10px;*/
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.header__nav-link:hover {
-    background-color: #1D293F; 
-    color: #e1e0e0; 
-}
 
 
-/* Mapa */
-#map {
-    height: 100%;
-    width: 100%;
-}
-
-#controls {
+/*#controls {
     position: absolute;
-    top: 560px;
+    top: 530px;
     left: 20px;
     z-index: 5;
-    /*background-color: white;*/
     padding: 15px;
     border-radius: 5px;
-    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);*/
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /*max-width: 90%;*/ /* Evita que se desborde en pantallas pequeñas */
 }
 
 #controls input {
@@ -103,165 +30,136 @@ body, html {
 
 #controls button:hover {
     background-color: #357ae8;
+}*/
+
+/*@import url(../styles/styles.css);*/
+
+/* Estilos Generales */
+* {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo general del footer */
-.footer {
-    background-color: #1D293F;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Ocultar el footer por defecto en dispositivos móviles */
-#footer-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+body, html {
     width: 100%;
-    background-color:  #1D293F;
-    padding: 15px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Slabo 27px", serif;
+    overflow: hidden;
+}
+
+/* Estilo del header */
+.header {
+    background-color: #1D293F;
+    position: fixed;
+    top: 0;
+    height: 12%;
+    width: 100%;
     z-index: 1000;
 }
 
-/* Mostrar el footer cuando se active */
-#footer-popup.active {
-    display: block;
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
 }
 
-/* Botón de mostrar/ocultar footer */
-.footer__toggle {
-    display: none;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
+.header__logo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+} 
+
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 35px;
+}
+
+.header__nav-link:hover {
+    background-color: #1D293F;
+    color: #e1e0e0;
+}
+
+/* Mapa */
+#map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Controles */
+#controls {
+    position: absolute;
+    top: 530px;
+    left: 20px;
+    z-index: 5;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#controls input {
+    padding: 8px;
+    background-color: #fff;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#controls button {
+    width: 108%;
+    padding: 8px;
     background-color: #4285F4;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    z-index: 1001;
     cursor: pointer;
 }
 
-/* Footer */ 
-/*.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+#controls button:hover {
+    background-color: #357ae8;
 }
 
+/* Estilos generales del footer */
 .footer {
-    width: 100%;
-    background-color: #204fa1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-}
-
-.footer__section {
     background-color: #1D293F;
-    padding: 40px 20px;
-    justify-content: center;
-}
-
-.footer__section-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.footer__section-table{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer_title {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.footer__section-title {
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-
-.footer__section-t {
-    font-size: 1rem;
-    text-decoration: underline;
-    margin-top: 0.5rem;
-}
-
-.footer__section-links{
-    margin-bottom: 0.2rem;
-}
-
-.footer__section-link {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 200;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-.footer__section-link:hover {
-    color: #ffc107;
-}
-
-.footer__section-link i {
-    margin-right: 8px;
-}*/
-
-/* Redes */
-/*i {
-    margin-right: 5px;
-}
-
-i:hover {
-    color: #204fa1;
-    transition: 0.3s ease-in-out;
-}
-
-a i .footer__section-link{
-    color: #e1e0e0;
-}
-
-.social__container {
-    margin-bottom: 2rem;
-}
-
-.social__icon {
-    margin-right: 2px;
-    font-size: 1.2rem;
-    color: #fff;
-}*/
-
-/** Footer coryright**/
-/*.footer__copy {
-    --padding-container: 30px 0;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
-    color: #fff;
-    height: 40px;
-    font-weight: 200;
-    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.footer__copy a{
-    color: #fff;
-}
-
-.footer__copyright {
-    font-weight: 200;
-}*/
-
-/* Estilos responsive */
+/* Estilos responsive para dispositivos móviles */
 @media (max-width: 768px) {
     .header__container {
         flex-direction: column;
@@ -269,18 +167,17 @@ a i .footer__section-link{
     }
 
     .header__nav {
-        display: none; /* Oculta el menú en pantallas pequeñas */
+        display: none;
         width: 100%;
     }
 
     .header__nav.active {
-        display: flex; /* Muestra el menú cuando se activa */
+        display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
     .header__nav-list {
-        display: flex;
         flex-direction: column;
         width: 100%;
         padding: 0;
@@ -289,7 +186,7 @@ a i .footer__section-link{
 
     .header__nav-link {
         padding: 10px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #f8f9fa;
         width: 100%;
         text-align: center;
     }
@@ -301,87 +198,52 @@ a i .footer__section-link{
         border: none;
         font-size: 1.5em;
         cursor: pointer;
+        margin-left: 8px;
     }
 
     .header__menu-button span {
         display: block;
         width: 25px;
         height: 3px;
-        background: #333;
+        background: #ccc;
         margin: 5px 0;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    #map {
+        height: 100vh;
+    }
+
+    #controls {
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        max-width: 400px;
+        padding: 10px;
+        gap: 8px;
+    }
+
+    #controls input {
+        width: 95%;
+        padding: 8px;
+    }
+
+    #controls button {
+        padding: 8px;
+        width: 100%;
     }
 }
 
 @media (min-width: 769px) {
     .header__menu-button {
-        display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+        display: none;
     }
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav__links {
-        font-size: 1em;
-    }
-
-    .hero__title {
-        font-size: 1.5em;
-    }
-
-    #map {
-        height: 300px;
-    }
-
-    .footer__section-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* Estilos responsive para dispositivos móviles */
-@media screen and (max-width: 600px) {
-    /* Hacer que el mapa ocupe toda la pantalla */
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    #map {
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    #controls {
-        position: fixed; /* Posiciona el contenedor fijo en la pantalla */
-        bottom: 10px;    /* Ajusta la distancia desde la parte inferior de la pantalla */
-        height: 10%;
-        left: 40%;
-        transform: translateX(-50%);
-        width: 70%;      /* Ajusta el tamaño en móviles */
-        max-width: 400px; /* Opcional: limita el ancho máximo */
-        padding: 10px;   /* Ajusta el padding en móviles */
-        gap: 8px;        /* Ajusta el espacio entre los elementos */
-       /* background-color: white;*/ /* Asegura que el fondo sea visible */
-        /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);*/ /* Mantén el sombreado para visibilidad */
-    }
-
-    #controls input {
-        width: 70%; /* El input ocupa todo el ancho del contenedor */
-        padding: 8px; /* Ajusta el padding del input en móviles */
-    }
-
-    #controls button {
-        padding: 8px; /* Ajusta el padding del botón en móviles */
-        width: 75%; /* Ajusta el ancho del botón para que ocupe el 100% del contenedor */
-    }
-}
-
 
 
 

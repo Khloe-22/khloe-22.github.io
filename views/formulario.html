@@ -12,23 +12,24 @@
 <body>
 
     <!---header-->
-
-<header class="header">
-    <div class="container header__container">
-        <div class="header__logo">
-           <h2 class="privacidad">ZERO</h2>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+               <h2 class="privacidad">ZERO</h2>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                    <li><a href="#" class="header__nav-link">Nosotros</a></li>
+                    <li><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
+                    <li><a href="#" class="header__nav-link">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="header__hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
-                <li><a href="#" class="header__nav-link">Nosotros</a></li>
-                <li><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
-                <li><a href="#" class="header__nav-link">Blog</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-   
+    </header>
 
     <!---form-->
     <div class="miForm">
@@ -59,48 +60,23 @@
         </form>
     </div>
 
-       <!-- Footer -->
-       <footer class="footer">
-        <section class="footer__section"> 
-            <div class="footer__section-container container1">
-                <h2 class="footer__title">ZERO</h2>
-                <article class="footer_section">
-                    <h3 class="footer__section-title">Ubicacion</h3>
-
-                    <ul class="footer__section-table">
-                        <li class="footer__section-links">
-                            <li><a href="https://goo.gl/maps/BoMW1fSVEovrzJyB8" class="footer__section-link"><i class="fa-solid fa-location-dot"></i> Hoogoorddreef 55, 1101 BE Amsterdam, Países Bajos</a></li>
-                    </ul>  
-
-                    <h3 class="footer__section-title">Contacto Directo</h3>
-                    <ul class="footer__section-table">
-                        <li class="footer__section-links">
-                            <li><a class="footer__section-link" href="mailto:go-4-fit@gmail.com" ><i class="fa-solid fa-envelope"></i>jcorderog78@icloud.com  </a></li>
-                            <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
-                    </ul>  
-
-                    <h3 class="footer__section-title">DSCUBRE Y AHORA</h3>
-                    <ul class="footer__section-table">
-                        <li class="footer__section-links">
-                            <a href="../views/politicaAviso.html" class="footer__section-link">Politica de privacidad</a>
-                        </li>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <h2>ZERO</h2>
+            </div>
+            <div class="footer__sections">
+                <!-- Contacto Directo -->
+                <section class="footer__section">
+                    <h3 class="footer__section-title">Contacto</h3>
+                    <ul class="footer__list">
+                        <li><a href="mailto:jcorderog78@icloud.com" class="footer__section-link"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                        <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> Teléfono</a></li>
                     </ul>
-
-                    <ul class="footer__section-table">
-                        <li class="footer__section-links">
-                            <a href="../views/politicaAviso.html" class="footer__section-link">Cookies</a>
-                        </li>
-                    </ul>
-
-                    <ul class="footer__section-table">
-                        <li class="footer__section-links">
-                            <a href="../views/politicaAviso.html" class="footer__section-link">Aviso Legal</a>
-                        </li>
-                    </ul>
-                </article>
-                
-                <!---Redes -->
-                <article class="footer__section">
+                </section>
+    
+                <!-- Redes Sociales -->
+                <section class="footer__section">
                     <h3 class="footer__section-title">Síguenos</h3>
                     <div class="social__container">
                         <a href="https://www.facebook.com/profile.php?id=100010402808950" class="social__icon"><i class="fab fa-facebook-f"></i></a>
@@ -108,26 +84,14 @@
                         <a href="https://twitter.com/juliojump23" class="social__icon"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://www.linkedin.com/in/julio-cordero-guzman-3b873217b/" class="social__icon"><i class="fab fa-linkedin"></i></a>
                     </div>
-
-             
-                <div id="newsletterPopup" class="newsletter-popup">
-                    <button id="closePopup" class="close-popup-button">&times;</button>
-                    <form id="newsletterForm" class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
-                        <h2 class="footer__newsletter">¡Suscríbete a la Newsletter!</h2>
-                        <div class="footer__inputs">
-                            <input type="email" placeholder="Email:" class="footer__input" name="_replyto" required>
-                            <input type="submit" value="Regístrate" class="footer__submit">
-                        </div>
-                        <p id="formMessage" class="form-message" style="display:none;">¡Gracias por suscribirte!</p>
-                    </form>
-                </div> 
-                </article>
+                </section>
             </div>
-        </section>
+        </div>
         <div class="footer__copy">
-            copyright <span id="current-year"></span> Todos los derechos reservados.
+            <p>&copy; 2024 ZERO. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
     <script src="../js/formulario.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ikBILDN7ElTP9UbJdgQPIaqyENa5OVI&libraries=places"></script>
     <script src="../js/footer.js"></script>                 

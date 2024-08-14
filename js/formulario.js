@@ -40,15 +40,25 @@ form.addEventListener("submit", e=>{
 });
 
 
+// Menu Mburguesa
+const hamburger = document.querySelector('.header__hamburger');
+const navList = document.querySelector('.header__nav-list');
+
+hamburger.addEventListener('click', () => {
+    navList.classList.toggle('active');
+});
+
+
+
 // Newsletter
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const newsletterPopup = document.getElementById("newsletterPopup");
     const closePopupButton = document.getElementById("closePopup");
     const newsletterForm = document.getElementById("newsletterForm");
-    const formMessage = document.getElementById("formMessage");
+    const formMessage = document.getElementById("formMessage");*/
 
     // Mostrar el popup automáticamente después de 3 segundos
-    setTimeout(function() {
+    /*setTimeout(function() {
         newsletterPopup.classList.add("show");
     }, 3000);
 
@@ -106,4 +116,4 @@ document.addEventListener("DOMContentLoaded", function() {
             newsletterForm.reset();
         }, 3000);
     });
-});
+});*/

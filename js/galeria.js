@@ -91,3 +91,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.getElementById("menu-icon").onclick = function() {
+    var mobileNav = document.getElementById("mobile-nav");
+    if (mobileNav.classList.contains("active")) {
+        mobileNav.classList.remove("active");
+    } else {
+        mobileNav.classList.add("active");
+    }
+};
+
