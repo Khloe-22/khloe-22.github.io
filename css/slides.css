@@ -1,0 +1,57 @@
+/* Estilo básico para la galería */
+@import url(./style.css);
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    z-index: -1;
+}
+
+.gallery-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block;
+}
+
+.gallery-item.active {
+    opacity: 1;
+}
+
+/* Navegación de la galería */
+.gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(0,0,0, .3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.nav-button > span {
+  font-size: 15px;
+}
+.nav-button:hover {
+    background-color: #1b1d1d;
+}
+ 

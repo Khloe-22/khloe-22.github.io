@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zero</title>
+        <link rel="stylesheet" href="../css/presupuesto.css">
+        <link rel="stylesheet" href="../css/footer-pres.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/088e8f0b2d.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!---header-->
+            
+<header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+           <h2 class="privacidad">ZERO</h2>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                <li><a href="#" class="header__nav-link">Nosotros</a></li>
+                <li><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
+                <li><a href="#" class="header__nav-link">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        <!-- Form presupuesto -->
+
+    <div class="miForm">
+        <div class="form-container">
+            <h2>Formulario de Solicitud</h2>
+            <form id="formulario-solicitud">
+                <fieldset>
+                    <legend>Datos</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba aquí su nombre" required>
+                    <span class="error" id="nombreError"></span>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Escriba aquí sus apellidos" required>
+                    <span class="error" id="apellidosError"></span>
+
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Escriba aquí su teléfono de contacto" required pattern="[0-9]{10}">
+                    <span class="error" id="telefonoError"></span>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Escriba aquí su dirección de correo electrónico" required>
+                    <span class="error" id="emailError"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <label for="producto">Elija un producto:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="100">Producto 1 - $90</option>
+                        <option value="200">Producto 2 - $150</option>
+                        <option value="300">Producto 3 - $350</option>
+                        <option value="300">Producto 3 - $330</option>
+                        <option value="300">Producto 3 - $370</option>
+                        <option value="300">Producto 3 - $380</option>
+                    </select>
+
+                    <label for="plazo">Plazo en meses:</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="12" value="1" required>
+
+                    <label>Elija los extras para el producto:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="color" name="extra" value="20">
+                        <label for="color">Color Personalizado (+$120)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="tipografia" name="extra" value="15">
+                        <label for="tipografia">Tipografía personalizada (+$115)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terminacion" name="extra" value="25">
+                        <label for="terminacion">Terminación personalizada (+$125)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="nombrePersonalizado" name="extra" value="10">
+                        <label for="nombrePersonalizado">Nombre personalizado (+$110)</label>
+                    </div>
+
+                    <label for="presupuesto">Presupuesto estimado:</label>
+                    <input type="text" id="presupuesto" name="presupuesto" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="acepta" name="acepta" required>
+                        <label for="acepta">Acepto las condiciones y envío de presupuesto</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <label for="privacidad">He leído la política de privacidad</label>
+                    </div>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <section class="footer__section"> 
+                <div class="footer__section-container container1">
+                    <h2 class="footer__title-t">ZERO</h2>
+                    <article class="footer_section">
+                        <h3 class="footer__section-title">Ubicacion</h3>
+
+                        <ul class="footer__section-table">
+                            <li class="footer__section-links">
+                                <li><a href="https://goo.gl/maps/BoMW1fSVEovrzJyB8" class="footer__section-link"><i class="fa-solid fa-location-dot"></i>Hoogoorddreef 55, 1101 BE Amsterdam, Países Bajos</a></li>
+                        </ul>  
+
+                        <h3 class="footer__section-title">Contacto Directo</h3>
+                        <ul class="footer__section-table">
+                            <li class="footer__section-links">
+                                <li><a class="footer__section-link" href="mailto:go-4-fit@gmail.com" ><i class="fa-solid fa-envelope"></i>jcorderog78@icloud.com  </a></li>
+                                <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
+                        </ul>  
+
+                        <h3 class="footer__section-title">DSCUBRE Y AHORA</h3>
+                        <ul class="footer__section-table">
+                            <li class="footer__section-links">
+                                <a href="../views/politicaAviso.html" class="footer__section-link">Politica de privacidad</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__section-table">
+                            <li class="footer__section-links">
+                                <a href="../views/politicaAviso.html" class="footer__section-link">Cookies</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__section-table">
+                            <li class="footer__section-links">
+                                <a href="../views/politicaAviso.html" class="footer__section-link">Aviso Legal</a>
+                            </li>
+                        </ul>
+                    </article>
+    
+                    <!---Redes-->
+                    <article class="footer__section">
+                        <h3 class="footer__section-title">Siguenos</h3>
+                        <div class="social__container"> 
+                            <a href="https://www.facebook.com/profile.php?id=100010402808950" class="social__icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/ftness_life/" class="social__icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com/juliojump23" class="social__icon"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/julio-cordero-guzman-3b873217b/" class="social__icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+
+                        <div id="newsletterPopup" class="newsletter-popup">
+                            <button id="closePopup" class="close-popup-button">&times;</button>
+                            <form id="newsletterForm" class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                                <h2 class="footer__newsletter">¡Suscríbete a la Newsletter!</h2>
+                                <div class="footer__inputs">
+                                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto" required>
+                                    <input type="submit" value="Regístrate" class="footer__submit">
+                                </div>
+                                <p id="formMessage" class="form-message" style="display:none;">¡Gracias por suscribirte!</p>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!--- Copy R.-->
+            <div class="footer__copy">
+                <a href="footer__copy-text" id="copyright"></a>
+                copyright 
+                <span id="current-year"></span>
+                Todos los derechos reservados
+                <a href="#" target="_blank"></a>
+            </div>
+        </footer>
+    <script src="../js/footer.js"></script>
+    <script src="../js/presupuesto.js"></script>
+</body>   
+</html> 

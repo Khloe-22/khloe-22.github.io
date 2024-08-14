@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero</title>
+
+    <!-- Librerias-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/088e8f0b2d.js" crossorigin="anonymous"></script>
+    <!--- Swipper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="./assets/imgSvg/apple-icon-76x76.png">
+
+    <!-- CSS, CSS Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!--- Demas estilos CSS-->
+    <link rel="stylesheet" href="./css/noticiasJSON.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/slides.css">
+    <link rel="stylesheet" href="./css/slideSwiper.css">
+
+    <!--- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!--Meta etiqueta para subir la pagina-->
+    <meta name="theme-color" content="#2091F9">
+    
+    <meta name="title" content="ZERO CURSOS TECHNOLOGIA">
+    <meta name="description" 
+    content="Aprende tecnología desde cero con guías prácticas, conceptos claros y recursos accesibles para dominar habilidades tecnológicas esenciales rápidamente.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://zerotechcursos.github.io">
+    <meta property="og:title" content="ZERO CURSOS TECHNOLOGIA">
+    <meta property="og:description" content="Aprende tecnología desde cero con guías prácticas, conceptos claros y recursos accesibles para dominar habilidades tecnológicas esenciales rápidamente.">
+    <meta property="og:image" content="https://metatags.io/images/images/imagen-show.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://zerotechcursos.github.io">
+    <meta property="twitter:title" content="ZERO CURSOS TECHNOLOGIA">
+    <meta property="twitter:description" content="Aprende tecnología desde cero con guías prácticas, conceptos claros y recursos accesibles para dominar habilidades tecnológicas esenciales rápidamente.">
+    <meta property="twitter:image" content="https://metatags.io/images/https://metatags.io/images/imagen-show.jpg">
+
+</head>
+<body>
+
+      <!-- Cookie Banner -->
+<div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>Utilizamos cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
+        <button id="acceptCookies" class="cookie-button">Aceptar</button>
+        <button id="rejectCookies" class="cookie-button">Rechazar</button>
+    </div>
+</div>
+
+    <!-- Hero Header-->
+    <header class="hero">
+            <div>
+                <nav class="nav container">
+                    <div class="nav__logo">
+                      <h2 class="nav__title">ZERO</h2>
+                    </div>
+
+                   <!--- NAV -->
+                    <ul class="nav__link nav__link--menu" >
+                        <li class="nav__items">
+                            <a href="./index.html" class="nav__links">Inicio</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Nosostros</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="./views/contacto.html" class="nav__links">Contacto</a>
+                        </li>
+
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Blog</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close">
+                        <img src="./assets/imgSvg/close.svg" class="nav__img" alt="cerrar">
+                    </div>    
+
+                    <div class="nav__menu">
+                        <img src="./assets/imgSvg/menu.svg" class="nav__img" alt="menu amburguesa">
+                    </div>
+                </nav>
+            </div> 
+
+        <!--- Header Slide -->
+        <div id="gallery">
+            <div class="gallery-container">
+                <figure class="gallery-item">
+                    <img src="./assets/images/imagen5.jpg" alt="Imagen 1">
+        <!--             <figcaption>Descripción de la imagen 1</figcaption> -->
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./assets/images/imagen2.jpg" alt="Imagen 2">
+        <!--             <figcaption>Descripción de la imagen 2</figcaption> -->
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./assets/images/imagen1.jpg" alt="Imagen 3">
+        <!--             <figcaption>Descripción de la imagen 3</figcaption> -->
+                </figure>
+            </div>
+         
+            <nav class="gallery-navigation">
+                <button class="nav-button prev-button"><span>&#60;</span></button>
+                <button class="nav-button next-button"><span>&#62;</span></button>
+            </nav>
+        </div>
+    </header>
+
+        <!--- Titulo Principal Container-->
+         <section class="hero__container container">  
+            <h1 class="hero__title">Aprende CSS, Grid, Layaout desde cero</h1>
+            <p class="paragraph">Google trabaja directamente con las partes interesadas clave para 
+            cada esfuerzo de la biblioteca y acepta las versiones más recientes a medida que se publican.</p>
+            <a href="./views/galeria.html" class="cta">Visita Nuestra Galeria</a>
+        </section> 
+
+        <!--- Data Json-->
+        <div id="noticias">
+            <section class="news container">
+                <h2 class="subtitle">Últimas Noticias</h2>
+                <div id="news-container" class="news__grid">
+                    <!-- Aquí se cargarán las noticias desde el archivo JSON -->
+                </div>
+            </section>
+        </div>
+        
+         <!-- About Container -->
+    <main>
+        <section class="container about">
+                <h2 class="subtitle">Listo para aprender?</h2>
+                <p class="about__paragraph">Todo lo necesario y obligatorio de CSS, (Flexbox, Grid, Custom
+                properties, Position, Animaciones, Box Model, JavaScript).</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./assets/imgSvg/shapes.svg" class="about__icon"  alt="">
+                    <h3 class="about__title">CSS Layout</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus 
+                    atque tempora sequi quos totam nesciunt, architecto provident error labore quia veniam doloribus.
+                    </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./assets/imgSvg/select.svg" class="about__icon"  alt="">
+                    <h3 class="about__title">Sass</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus 
+                    atque tempora sequi quos totam nesciunt, architecto provident error labore quia veniam doloribus.
+                    </p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./assets/imgSvg/user.svg" class="about__icon" alt="">
+                    <h3 class="about__title">Animaciones</h3>
+                    <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus 
+                    atque tempora sequi quos totam nesciunt, architecto provident error labore quia veniam doloribus.
+                    </p>
+                </article>
+
+             </div>
+        </section>  
+
+        <!-- Knowledge Container -->
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__texts">
+                    <h2 class="subtitle">CSS3 completo. Dominalo!!</h2>
+                    <p class="knowledge__paragraph">Te recomendamos que cargues bibliotecas desde la CDN a 
+                    través de HTTPS, incluso si tu propio sitio web solo usa HTTP. En la actualidad, el 
+                    rendimiento es rápido y el almacenamiento en caché funciona de la misma manera. Los 
+                    archivos de la CDN se entregan con </p>
+                    <a href="./views/formulario.html" class="cta">Empieza Ya!!</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="./assets/images/laptop2.jpg" class="knowledge__img"  alt="">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Price Container -->
+        <section class="price container">
+            <h2 class="subtitle">Obtener el plan perfecto!!</h2>
+            <div class="price__table">
+                <!-- Aqui se ha creado las tarjetas de precios dinamicamente utilizando JavaScript -->
+                <!--- carpeta price.js-->           
+            </div>
+        </section>
+
+        <!-- Slider -Swiper -->
+        <!-- Encabezado Swiper -->
+        <h2 class="slider-heading">Conoce a Nuestro Equipo</h2>
+      <div id="contenedor">
+        <div class="container swiper">
+            <div class="slider-wraper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="./assets/images/oficina.foto-2.jpg" width="509" height="339" alt="user image" class="user-image">
+                        <h2 class="user-name">Jaime Ramirez</h2>
+                        <p class="user-profession">Diseñador Grafico</p>
+                        <button class="message-button">Message</button>
+                    </div>
+    
+                    <div class="card-item swiper-slide">
+                        <img src="./assets/images/directivo_05.jpg" width="428" height="612" alt="user image" class="user-image">
+                        <h2 class="user-name">Rafael Ortiz</h2>
+                        <p class="user-profession">Data Analyst </p>
+                        <button class="message-button">Message</button>
+                    </div>
+    
+                    <div class="card-item swiper-slide" >
+                        <img src="./assets/images/oficina.foto-3.jpg" width="509" height="339" alt="user image" class="user-image">
+                        <h2 class="user-name">Alice Grant</h2>
+                        <p class="user-profession">Hardware</p>
+                        <button class="message-button">Message</button>
+                    </div>
+    
+                    <div class="card-item swiper-slide">
+                        <img src="./assets/images/oficina.foto-4.jpg" width="509" height="339" alt="user image" class="user-image">
+                        <h2 class="user-name">Harry Rojas </h2>
+                        <p class="user-profession">Ciberseguridad</p>
+                        <button class="message-button">Message</button>
+                    </div>
+    
+                    <div class="card-item swiper-slide">
+                        <img src="./assets/images/oficina.foto-5.jpg" width="509" height="339" alt="user image" class="user-image">
+                        <h2 class="user-name">Jan Van Aten</h2>
+                        <p class="user-profession">Telecomunicaciones</p>
+                        <button class="message-button">Message</button>
+                    </div>
+    
+                    <div class="card-item swiper-slide">
+                        <img src="./assets/images/0ficina.foto-6.jpg" width="612" height="408" alt="user image" class="user-image">
+                        <h2 class="user-name">Grid</h2>
+                        <p class="user-profession"> Desarrollar</p>
+                        <button class="message-button">Message</button>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide swiper-button-prev"></div>
+                <div class="swiper-slide swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+      </div>
+
+        <!-- Questions Container -->
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas Frecuentes</h2>
+            <p class="questions__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Saepe velit quisquam beatae temporibus dolor quis quidem quo nam voluptas ipsam dolore.</p>
+
+            <div class="questions__container">
+               
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Flexbox?
+                        <span class="questions__arrow">
+                            <img src="./assets/imgSvg/chevron-up.svg" class="questions__img" alt="">
+                        </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Facere adipisci, vitae maiores soluta dolor exercitationem explicabo sed 
+                        beatae, fugit cumque totam est amet quas ab odit quasi ipsa. Quidem, repellendus,
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae dolor doloremque 
+                        repellendus officiis ducimus ullam saepe temporibus sequi adipisci earum iusto similique 
+                        aliquid numquam ad exercitationem, veritatis enim modi facilis.</p>
+                    </div> 
+                </article>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Grid?
+                        <span class="questions__arrow">
+                            <img src="./assets/imgSvg/chevron-up.svg" class="questions__img" alt="">
+                        </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Facere adipisci, vitae maiores soluta dolor exercitationem explicabo sed 
+                        beatae, fugit cumque totam est amet quas ab odit quasi ipsa. Quidem, repellendus,
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae dolor doloremque 
+                        repellendus officiis ducimus ullam saepe temporibus sequi adipisci earum iusto similique 
+                        aliquid numquam ad exercitationem, veritatis enim modi facilis.</p>
+                    </div> 
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">Animation?
+                        <span class="questions__arrow">
+                            <img src="./assets/imgSvg/chevron-up.svg" class="questions__img" alt="">
+                        </span>
+                        </h3>
+
+                        <p class="questions__show">Lorem ipsum dolor sit amet, consectetur adipisicing 
+                        elit. Facere adipisci, vitae maiores soluta dolor exercitationem explicabo sed 
+                        beatae, fugit cumque totam est amet quas ab odit quasi ipsa. Quidem, repellendus,
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae dolor doloremque 
+                        repellendus officiis ducimus ullam saepe temporibus sequi adipisci earum iusto similique 
+                        aliquid numquam ad exercitationem, veritatis enim modi facilis.</p>
+                    </div> 
+                </article>
+               
+            </div>
+        </section>      
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="footer__section"> 
+            <div class="footer__title">
+                <h2 >ZERO</h2>
+            </div>
+            <div class="footer__section-container container1">
+                <div class="footer__title">
+            
+                </div>
+                <div class="footer_section">
+                    <h3 class="footer__section-title">Ubicacion</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <li><a href="https://goo.gl/maps/BoMW1fSVEovrzJyB8" class="footer__section-link"><i class="fa-solid fa-location-dot"></i> Hoogoorddreef 55, 1101 BE Amsterdam, Países Bajos</a></li>
+                    </ul>
+                    <h3 class="footer__section-title">Contacto Directo</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <li><a class="footer__section-link" href="mailto:go-4-fit@gmail.com" ><i class="fa-solid fa-envelope"></i>jcorderog78@icloud.com  </a></li>
+                            <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
+                    </ul>
+
+                    <h3 class="footer__section-title">DESCUBRE AHORA</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a href="./views/politicaAviso.html" class="footer__section-link">Politica de privacidad</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a href="./views/politicaAviso.html" class="footer__section-link">Cookies</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a href="./views/politicaAviso.html" class="footer__section-link">Aviso Legal</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <article class="footer__section">
+                    <h3 class="footer__section-title">Siguenos</h3>
+                    <div class="social__container"> 
+                        <a href="https://www.facebook.com/profile.php?id=100010402808950" class="social__icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ftness_life/" class="social__icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/juliojump23" class="social__icon"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/julio-cordero-guzman-3b873217b/" class="social__icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <div id="newsletterPopup" class="newsletter-popup">
+                        <form id="newsletterForm" class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                            <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                            <div class="footer__inputs">
+                                <input type="email" placeholder="Email:" class="footer__input" name="_replyto" required>
+                                <input type="submit" value="Registrate" class="footer__submit">
+                            </div>
+                            <p id="formMessage" class="form-message" style="display:none;">Gracias por suscribirte!</p>
+                        </form>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <div class="footer__copy">
+            <a href="footer__copy-text" id="copyright"></a>
+            copyright
+            <span id="current-year"></span>
+            Todos los derechos reservados
+            <a href="#" target="_blank"></a>
+        </div>
+    </footer>
+
+    <!---Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--- Scripts -->
+    <script src="./js/about.js"></script>
+    <script src="./js/cookies.js"></script>
+   <script src="./js/noticiasJSON.js"></script>
+    <script src="./js/newsletter.js"></script>
+    <script src="./js/price.js"></script>
+    <script src="./js/slideSwiper.js"></script>
+    <script src="./js/slides.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
+
+
+
+
+
+

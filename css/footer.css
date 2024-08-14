@@ -1,0 +1,180 @@
+@import url(./style.css);
+
+.footer{
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__section{
+    background-color: var(--dark);
+    padding: 40px 20px;
+    justify-content: center;
+}
+
+.footer__section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer__section-table{
+    list-style: none;
+}
+
+.footer__section-title{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration:underline;
+    margin-top: 1.2rem;
+    font-weight: 300;
+}
+
+.footer__title{
+    color:#fff;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-left: 60px;
+    padding-bottom: 5px;
+}
+
+.footer__section-links{
+    margin-bottom: 0.2rem;
+}
+
+.footer__section-link{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+i {
+    margin: 5px;
+}
+
+a i .footer__section-link{
+    color: #e1e0e0;
+}
+
+i:hover{
+    color: var(--light);
+    transition: 0.3s ease-in-out;
+}
+
+/** Redes Sociales **/
+.social__container{
+    margin-bottom: 2rem;
+}
+
+.social__icon{
+    margin-right: 2px;
+    color: #fff;
+    font-size: 1.2rem
+}
+
+/** Footer newsletter **/
+.footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    font-weight: 200;
+    color: #e1e0e0;
+}
+
+.footer__input{
+    background-color: #d8d2d2;
+    height: 40px;
+    display: block;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-right: 16px;
+}
+
+.footer__submit{
+    margin-left:0%;
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+    background-color:  #204fa1;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.footer__title, .footer__newsletter{
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.newsletter-popup {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 20px;
+    /*background-color: #ffffff;*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+    z-index: 1000;
+}
+
+.newsletter-popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #28a745; /* Verde para éxito */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/** Footer copy **/
+.footer__copy {
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+    height: 40px;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+
+.footer__copy a{
+    color: #fff;
+}
+
+.footer__copyright {
+    font-weight: 300;
+}
+
+
+
+@media only screen and (max-widht: 850px){
+  .footer__section{
+    width: 49%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-witd: 510px) {
+    .footer__section{
+        width: 100%;
+    }
+}

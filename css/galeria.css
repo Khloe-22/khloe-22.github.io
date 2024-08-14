@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+
+body {
+    font-family: "Slabo 27px", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+}
+
+/* Estilo del header */
+.header {
+    background-color: #2a3b57; 
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__logo h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header__nav-link:hover {
+    background-color: #1D293F; 
+    color: #e1e0e0; 
+}
+
+/** Galeria **/
+
+.container-grid{
+    margin-top: 110px;
+    display: grid;
+    height: 100%;
+    height: 100vh;
+    padding: 5px;
+    margin-bottom: 0px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    'img1 img2 img3 img3 img3'
+    'img1 img2 img3 img3 img3'
+    'img4 img4 img3 img3 img3'
+    'img4 img4 img3 img3 img3'
+    'img6 img6 img5 img5 img5'
+    'img6 img6 img5 img5 img5';
+    gap: 5px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img:hover{
+    filter: grayscale(60%);
+    cursor: pointer;
+    transition: filter .5s;
+}
+
+.img-1{
+    grid-area: img1;
+}
+.img-2{
+    grid-area: img2;
+}
+.img-3{
+    grid-area: img3;
+}
+.img-4{
+    grid-area: img4;
+}
+.img-5{
+    grid-area: img5;
+}
+.img-6{
+    grid-area: img6;
+}
+
+.container-img{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(-120%); /** move **/
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease-in; /*transicion para el container image js*/
+}
+
+.move{
+    transform: translateX(0); /**0 **/
+}
+
+.img-show{
+    height: 80%; display: block;
+    transform: scale(0.9); /*para desaparecer la image con scale*/ /* 0 */
+    object-fit: cover;
+    transition: transform .2s .3s; /**controlar la img*/
+}
+
+.show{
+    transform: scale(0.9);
+}
+
+.copy{
+    position: fixed;
+    color: #ccc;
+    bottom: 40px;
+    font-size: 25px;
+}
+
+.bx.bx-x{
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/** Footer **/
+.footer{
+    background-color:#204fa1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__section{
+    background-color: #1D293F;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer__section-table{
+    list-style: none;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 60px;
+}
+
+.footer__section-title{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration:underline;
+    margin-top: 0.5rem;
+}
+
+.footer__section-links{
+    margin-bottom: 0.2rem;
+}
+
+.footer__section-link{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+i {
+    margin: 5px;
+}
+
+a i .footer__section-link{
+    color: #e1e0e0;
+}
+
+i:hover{
+    color: #204fa1;
+    transition: 0.3s ease-in-out;
+}
+
+.social__container{
+    margin-bottom: 2rem;
+}
+
+.social__icon{
+    margin-right: 2px;
+    color: #fff;
+    font-size: 1.2rem
+}
+
+/** Newsletter **/
+/* Estilos del popup */
+.newsletter-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 350px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s, transform 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.newsletter-popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-popup-button:hover {
+    color: #e74c3c; 
+}
+
+.footer__newsletter {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer__input {
+    background-color: #ecf0f1;
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+}
+
+.footer__submit {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer__submit:hover {
+    background-color: #2980b9;
+}
+
+.form-message {
+    font-size: 1rem;
+    color: #2ecc71;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/** Footer coryright**/
+.footer__copy {
+    --padding-container: 30px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.footer__copy a{
+    color: #fff;
+}
+
+.footer__copyright {
+    font-weight: 200;
+}
+
+@media screen and (max-width: 700px){
+    .img-show{
+        width: 90%;
+    }
+    .copy{
+        bottom: 20px;
+    }
+    .bx.bx-x{
+        top: 10px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-widht: 850px){
+  .footer__section{
+    width: 49%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-witd: 510px) {
+    .footer__section{
+        width: 100%;
+    }
+}

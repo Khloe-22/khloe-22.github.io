@@ -1,0 +1,47 @@
+{
+    "noticias": [
+      {
+        "titulo": "Nueva tendencia en CSS",
+        "categoria": "Tecnología",
+        "contenido": "CSS sigue evolucionando con nuevas técnicas y herramientas...",
+        "imagen": "../assets/images/noticia1.jpg",
+        "url": "https://www.viewnext.com/css-tendencias"
+      },
+      {
+        "titulo": "Impacto del Diseño Web en 2024",
+        "categoria": "Diseño",
+        "contenido": "El diseño web se ha vuelto crucial para la experiencia de usuario...",
+        "imagen": "../assets/images/noticia2.jpg",
+        "url": "https://www.rockcontent.com/diseno-web"
+      },
+      {
+        "titulo": "JavaScript sigue dominando",
+        "categoria": "Programación",
+        "contenido": "JavaScript continúa siendo el lenguaje más popular en 2024...",
+        "imagen": "../assets/images/noticia3.jpg",
+        "url": "https://www.hubspot.es/javascript"
+      },
+      {
+        "titulo": "Inteligencia Artificial y su papel en la web",
+        "categoria": "IA",
+        "contenido": "La inteligencia artificial está transformando la manera en que interactuamos con la web...",
+        "imagen": "../assets/images/noticia4.jpg",
+        "url": "https://www.youtube.com/watch?v=8InzHYSdKuE/ia-web"
+      },
+      {
+        "titulo": "Guía completa de Flexbox",
+        "categoria": "Tutorial",
+        "contenido": "Aprende a dominar Flexbox con esta guía completa...",
+        "imagen": "../assets/images/noticia5.jpg",
+        "url": "https://desarrolloweb.com/articulos/propiedades-contenedor-flexbox.html"
+      },
+      {
+        "titulo": "Herramientas de desarrollo web para 2024",
+        "categoria": "Herramientas",
+        "contenido": "Estas son las herramientas imprescindibles para cualquier desarrollador web en 2024...",
+        "imagen": "../assets/images/noticia6.jpg",
+        "url": "https://www.capterra.com/herramientas-web"
+      }
+    ]
+  }
+  

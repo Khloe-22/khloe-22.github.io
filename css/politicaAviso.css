@@ -1,0 +1,342 @@
+/*@import url(../css/style.css);*/
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Slabo+27px&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+body {
+    font-family: "Slabo 27px", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+}
+
+/* Estilo del header */
+.header {
+    background-color: #2a3b57; 
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__logo h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header__nav-link:hover {
+    background-color: #1D293F; 
+    color: #e1e0e0; 
+}
+
+/* Estilo de los contenedores de las secciones (política de privacidad y aviso legal) */
+.policy-container,
+.legal-container {
+    max-width: 1000px;
+    margin: 100px auto 50px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de las secciones */
+.policy-title ,
+.legal-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #2a3b57; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Subtítulos de los artículos */
+.policy-section h3,
+.legal-section h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Estilo de los párrafos */
+.policy-section p,
+.legal-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/** Footer **/
+.footer{
+    background-color:#204fa1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__section{
+    background-color: #1D293F;
+    padding: 40px 20px;
+    justify-content: center;
+}
+
+.footer__section-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer__section-table{
+    list-style: none;
+}
+
+.footer__title-t{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.footer__section-title{
+    color: #fff;
+    font-size: 1rem;
+    text-decoration:underline;
+    margin-top: 0.5rem;
+}
+
+.footer__section-links{
+    margin-bottom: 0.2rem;
+}
+
+.footer__section-link{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: none;
+    margin: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__section-link:hover {
+    color: #ffc107;
+}
+
+i {
+    margin: 5px;
+}
+
+a i .footer__section-link{
+    color: #e1e0e0;
+}
+
+i:hover{
+    color: #204fa1;
+    transition: 0.3s ease-in-out;
+}
+
+.social__container{
+    margin-bottom: 2rem;
+}
+
+.social__icon{
+    margin-right: 2px;
+    color: #fff;
+    font-size: 1.2rem
+}
+
+/** Newsletter **/
+/* Estilos del popup */
+.newsletter-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 350px;
+    max-width: 90%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s, transform 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+.newsletter-popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close-popup-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-popup-button:hover {
+    color: #e74c3c; /* Rojo suave */
+}
+
+.footer__newsletter {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer__input {
+    background-color: #ecf0f1;
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+}
+
+.footer__submit {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer__submit:hover {
+    background-color: #2980b9;
+}
+
+.form-message {
+    font-size: 1rem;
+    color: #2ecc71;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/** Footer coryright**/
+.footer__copy {
+    --padding-container: 30px 0;
+    text-align: center;
+    font-weight: 200;
+    color: #fff;
+    height: 40px;
+    margin-top: 10px;
+}
+
+
+.footer__copy a{
+    color: #fff;
+}
+
+.footer__copyright {
+    font-weight: 300;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__nav-link {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .policy-container,
+    .legal-container {
+        margin: 150px auto 30px;
+        padding: 15px;
+    }
+
+    .policy-title,
+    .legal-title {
+        font-size: 2rem;
+    }
+
+    .policy-section h3,
+    .legal-section h3 {
+        font-size: 1.6rem;
+    }
+
+    .policy-section p,
+    .legal-section p {
+        font-size: 1rem;
+    }
+}
+
+
+
