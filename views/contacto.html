@@ -29,13 +29,31 @@
     </header>
    
     <!-- Contenedor del mapa -->
+    <!-- Botón para mostrar/ocultar el footer en dispositivos móviles -->
+    <button id="toggle-footer" class="footer__toggle">Mostrar/Ocultar Footer</button>
+
     <div id="controls">
         <input id="start" type="text" placeholder="Introduce tu ubicación">
         <button onclick="calculateRoute()">Calcular Ruta</button>
     </div>
     <div id="map"></div>
 
+
     <!-- Footer -->
+    <footer class="footer" id="footer-popup">
+        <section class="footer__section">
+            <div class="footer__section-container container1">
+                <!-- Contenido del footer como lo tienes -->
+                <!-- Ubicacion, Contacto Directo, Descubre y Ahora, Síguenos -->
+            </div>
+        </section>
+        <div class="footer__copy">
+            &copy; <span id="current-year"></span> Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+    <!-----
 <footer class="footer">
     <section class="footer__section">
  
@@ -88,12 +106,12 @@
             </article>
         </div>
     </section>
-    <div class="footer__copy">
+    <div class="footer__copy" id="footer">
         copyright <span id="current-year"></span> Todos los derechos reservados.
     </div>
 </footer>
+-->
 
-<!--<script src="../js/newsletter.js"></script>-->
 <script src="../js/contacto.js"></script> 
 
     <!-- Script de Google Maps -->
