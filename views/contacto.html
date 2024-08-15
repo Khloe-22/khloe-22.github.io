@@ -17,32 +17,29 @@
             <div class="header__logo">
                 <h2 class="privacidad">ZERO</h2>
             </div>
-            <div class="toggleMenu">
-                <button class="header__menu-button" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>    
+ 
             <nav class="header__nav">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
                 <ul class="header__nav-list">
                     <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
                     <li><a href="#" class="header__nav-link">Nosotros</a></li>
                     <li><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
-                    <li><a href="#" class="header__nav-link">Blog</a></li>
                 </ul>
             </nav>
+            
         </div>
     </header>
 
-    <!-- Contenedor del mapa -->
     <!-- Botón para mostrar/ocultar el footer en dispositivos móviles -->
     <button id="toggle-footer" class="footer__toggle">Mostrar/Ocultar Footer</button>
 
+    <!--- Input para calcular la rura -->
     <div id="controls">
         <input id="start" type="text" placeholder="Introduce tu ubicación">
         <button onclick="calculateRoute()">Calcular Ruta</button>
     </div>
+
     <div id="map"></div>
 
 
@@ -55,6 +52,14 @@
             </div>
         </div>
         <div class="footer__copy">
+            <section class="footer__section">  
+                <h3 class="zero">Zero</h3>  
+                <ul class="footer__list">  
+                    <li><a href="https://goo.gl/maps/BoMW1fSVEovrzJyB8" class="footer__section-link"><i class="fa-solid fa-location-dot"></i> Direccion</a></li>
+                    <li><a href="mailto:jcorderog78@icloud.com" class="footer__section-link"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                    <li><a href="tel:+020-1000-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> Teléfono</a></li>
+                </ul>
+            </section>
            &copy;<span id="current-year"></span> Todos los derechos reservados.
         </div>
     </footer>

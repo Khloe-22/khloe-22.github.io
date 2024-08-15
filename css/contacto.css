@@ -1,39 +1,4 @@
 
-
-/*#controls {
-    position: absolute;
-    top: 530px;
-    left: 20px;
-    z-index: 5;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#controls input {
-    padding: 8px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#controls button {
-    padding: 8px;
-    background-color: #4285F4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#controls button:hover {
-    background-color: #357ae8;
-}*/
-
-/*@import url(../styles/styles.css);*/
-
 /* Estilos Generales */
 * {
     background: none;
@@ -51,7 +16,7 @@ body, html {
     overflow: hidden;
 }
 
-/* Estilo del header */
+/* Estilos base */
 .header {
     background-color: #1D293F;
     position: fixed;
@@ -80,6 +45,7 @@ body, html {
 
 .header__nav {
     display: flex;
+    align-items: center;
 }
 
 .header__nav-list {
@@ -88,7 +54,7 @@ body, html {
     padding: 0;
     margin: 0;
     gap: 10px;
-} 
+}
 
 .header__nav-link {
     color: #fff;
@@ -102,6 +68,18 @@ body, html {
     color: #e1e0e0;
 }
 
+/* Estilos del menú hamburguesa */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
 /* Mapa */
 #map {
     height: 100%;
@@ -111,39 +89,45 @@ body, html {
     left: 0;
 }
 
-/* Controles */
+/* Contenedor de los controles */
 #controls {
-    position: absolute;
-    top: 530px;
-    left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#controls {
+    top: 90px;
+    left: 5px;
     z-index: 5;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding: 0;
 }
 
 #controls input {
     padding: 8px;
     background-color: #fff;
-    width: 100%;
+    width: 120%;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 35px;
 }
 
 #controls button {
-    width: 108%;
+    width: 60%;
     padding: 8px;
-    background-color: #4285F4;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: transparent;/*#4285F4;*/
+    color: #4e4a4a;
+    border: 2px solid #077be7 ;
+    border-radius: 35px;
     cursor: pointer;
+    margin-top: 3px;
+    font-weight: bold;
 }
 
 #controls button:hover {
-    background-color: #357ae8;
+    background-color: #077be7 ;
 }
 
 /* Estilos generales del footer */
@@ -159,46 +143,118 @@ body, html {
     z-index: 1000;
 }
 
-/* Estilos responsive para dispositivos móviles */
-@media (max-width: 768px) {
-    .header__container {
+/* estilos contacto */
+.footer__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer__list .zero {
+    margin-right: auto; 
+    font-size: 1.5rem;
+}
+
+.footer__list li {
+    margin-right: 25px;
+    display: inline-block;
+}
+
+.footer__section-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+}
+
+.footer__list li i {
+    margin-right: 5px;
+}
+
+/* Media Query para Pantallas Pequeñas */
+@media (max-width: 600px) {
+    .footer__list {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+    
+    .footer__list .zero {
+        margin-right: 0; 
+        margin-bottom: 10px; 
     }
 
-    .header__nav {
+    .footer__list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer__section-link {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    .header__menu-button {
         display: none;
-        width: 100%;
     }
+}
 
-    .header__nav.active {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
     .header__nav-list {
+        display: none;
         flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1D293F;
         width: 100%;
-        padding: 0;
-        margin: 0;
+        text-align: right;
     }
+
+    .header__nav-list li {
+        margin: 10px 0;
+    }
+
+    .header__nav-list.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    #controls {
+        padding: 5px;
+        width: 40%;
+    }
+
+    #controls input {
+        font-size: 14px;
+    }
+
+}
+
+/* Mostrar el menú al hacer clic */
+.menu-toggle:checked ~ .header__nav-list {
+    display: flex;
+}
 
     .header__nav-link {
-        padding: 10px;
-        border-bottom: 1px solid #f8f9fa;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Botón de hamburguesa */
-    .header__menu-button {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 1.5em;
-        cursor: pointer;
-        margin-left: 8px;
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        border-bottom: 1px solid #fff;
+        width: 70%;
+        /*text-align: flex-start;*/
+        
     }
 
     .header__menu-button span {
@@ -218,32 +274,9 @@ body, html {
         height: 100vh;
     }
 
-    #controls {
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 70%;
-        max-width: 400px;
-        padding: 10px;
-        gap: 8px;
-    }
+  
 
-    #controls input {
-        width: 95%;
-        padding: 8px;
-    }
 
-    #controls button {
-        padding: 8px;
-        width: 100%;
-    }
-}
-
-@media (min-width: 769px) {
-    .header__menu-button {
-        display: none;
-    }
-}
 
 
 
