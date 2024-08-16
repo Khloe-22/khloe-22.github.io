@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero</title>
 
-    <!-- Librerias-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Librerias font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css" integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://kit.fontawesome.com/088e8f0b2d.js" crossorigin="anonymous"></script>
     <!--- Swipper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -54,13 +54,13 @@
 <body>
 
       <!-- Cookie Banner -->
-<div id="cookieBanner" class="cookie-banner">
+<!-- <div id="cookieBanner" class="cookie-banner">
     <div class="cookie-content">
         <p>Utilizamos cookies para mejorar tu experiencia. ¿Aceptas el uso de cookies?</p>
         <button id="acceptCookies" class="cookie-button">Aceptar</button>
         <button id="rejectCookies" class="cookie-button">Rechazar</button>
     </div>
-</div>
+</div>-->
 
     <!-- Hero Header-->
     <header class="hero">
@@ -77,7 +77,7 @@
                         </li>
 
                         <li class="nav__items">
-                            <a href="#" class="nav__links">Nosostros</a>
+                            <a href="./views/galeria.html" class="nav__links">Galeria</a>
                         </li>
 
                         <li class="nav__items">
@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="nav__items">
-                            <a href="#" class="nav__links">Blog</a>
+                            <a href="./views/presupuesto.html" class="nav__links">Presupuesto</a>
                         </li>
                     </ul>
 
@@ -103,19 +103,20 @@
         <div id="gallery">
             <div class="gallery-container">
                 <figure class="gallery-item">
-                    <img src="./assets/images/imagen5.jpg" alt="Imagen 1">
+                    <img src="./assets/images/imagen5.jpg" width="612" height="372" alt="Imagen 1">
         <!--             <figcaption>Descripción de la imagen 1</figcaption> -->
                 </figure>
                 <figure class="gallery-item">
-                    <img src="./assets/images/imagen2.jpg" alt="Imagen 2">
+                    <img src="./assets/images/imagen2.jpg" width="612" height="408" alt="Imagen 2">
         <!--             <figcaption>Descripción de la imagen 2</figcaption> -->
                 </figure>
                 <figure class="gallery-item">
-                    <img src="./assets/images/imagen1.jpg" alt="Imagen 3">
+                    <img src="./assets/images/imagen1.jpg" width="612" height="408"  alt="Imagen 3">
         <!--             <figcaption>Descripción de la imagen 3</figcaption> -->
                 </figure>
             </div>
          
+            <!--- Galeria Nvegacion Principal-->
             <nav class="gallery-navigation">
                 <button class="nav-button prev-button"><span>&#60;</span></button>
                 <button class="nav-button next-button"><span>&#62;</span></button>
@@ -128,7 +129,7 @@
             <h1 class="hero__title">Aprende CSS, Grid, Layaout desde cero</h1>
             <p class="paragraph">Google trabaja directamente con las partes interesadas clave para 
             cada esfuerzo de la biblioteca y acepta las versiones más recientes a medida que se publican.</p>
-            <a href="./views/galeria.html" class="cta">Visita Nuestra Galeria</a>
+            <!--<a href="#" class="cta">Visita Nuestra Galeria</a>-->
         </section> 
 
         <!--- Data Json-->
@@ -150,7 +151,7 @@
 
             <div class="about__main">
                 <article class="about__icons">
-                    <img src="./assets/imgSvg/shapes.svg" class="about__icon"  alt="">
+                    <img src="./assets/imgSvg/shapes.svg" width="24" height="24" class="about__icon"  alt="shapes">
                     <h3 class="about__title">CSS Layout</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus 
                     atque tempora sequi quos totam nesciunt, architecto provident error labore quia veniam doloribus.
@@ -158,7 +159,7 @@
                 </article>
 
                 <article class="about__icons">
-                    <img src="./assets/imgSvg/select.svg" class="about__icon"  alt="">
+                    <img src="./assets/imgSvg/select.svg" width="24" height="24" class="about__icon"  alt="select">
                     <h3 class="about__title">Sass</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus 
                     atque tempora sequi quos totam nesciunt, architecto provident error labore quia veniam doloribus.
@@ -166,7 +167,7 @@
                 </article>
 
                 <article class="about__icons">
-                    <img src="./assets/imgSvg/user.svg" class="about__icon" alt="">
+                    <img src="./assets/imgSvg/user.svg" width="24" height="24" class="about__icon" alt="user">
                     <h3 class="about__title">Animaciones</h3>
                     <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ducimus 
                     atque tempora sequi quos totam nesciunt, architecto provident error labore quia veniam doloribus.
@@ -185,10 +186,10 @@
                     través de HTTPS, incluso si tu propio sitio web solo usa HTTP. En la actualidad, el 
                     rendimiento es rápido y el almacenamiento en caché funciona de la misma manera. Los 
                     archivos de la CDN se entregan con </p>
-                    <a href="./views/formulario.html" class="cta">Empieza Ya!!</a>
+                    <a href="#" class="cta">Empieza Ya!!</a>
                 </div>
                 <figure class="knowledge__picture">
-                    <img src="./assets/images/laptop2.jpg" class="knowledge__img"  alt="">
+                    <img src="./assets/images/imagen-show.jpg" width="612" height="381"  class="knowledge__img"  alt="AI">
                 </figure>
             </div>
         </section>
@@ -271,7 +272,7 @@
                     <div class="questions__answer">
                         <h3 class="questions__title">Flexbox?
                         <span class="questions__arrow">
-                            <img src="./assets/imgSvg/chevron-up.svg" class="questions__img" alt="">
+                            <img src="./assets/imgSvg/chevron-up.svg" width="24" height="24" class="questions__img" alt="icono">
                         </span>
                         </h3>
 
@@ -287,7 +288,7 @@
                     <div class="questions__answer">
                         <h3 class="questions__title">Grid?
                         <span class="questions__arrow">
-                            <img src="./assets/imgSvg/chevron-up.svg" class="questions__img" alt="">
+                            <img src="./assets/imgSvg/chevron-up.svg" width="24" height="24" class="questions__img" alt="icono">
                         </span>
                         </h3>
 
@@ -304,7 +305,7 @@
                     <div class="questions__answer">
                         <h3 class="questions__title">Animation?
                         <span class="questions__arrow">
-                            <img src="./assets/imgSvg/chevron-up.svg" class="questions__img" alt="">
+                            <img src="./assets/imgSvg/chevron-up.svg" width="24" height="24" class="questions__img" alt="">
                         </span>
                         </h3>
 
@@ -341,7 +342,7 @@
                     <ul class="footer__section-table">
                         <li class="footer__section-links">
                             <li><a class="footer__section-link" href="mailto:go-4-fit@gmail.com" ><i class="fa-solid fa-envelope"></i>jcorderog78@icloud.com  </a></li>
-                            <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
+                            <li><a href="tel:022-100-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
                     </ul>
 
                     <h3 class="footer__section-title">DESCUBRE AHORA</h3>
@@ -399,16 +400,15 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--- Scripts -->
-    <script src="./js/about.js"></script>
-    <script src="./js/cookies.js"></script>
-   <script src="./js/noticiasJSON.js"></script>
+    
+  <!----<script src="./js/cookies.js"></script>-->
+    <script src="./js/noticiasJSON.js"></script>
     <script src="./js/newsletter.js"></script>
     <script src="./js/price.js"></script>
     <script src="./js/slideSwiper.js"></script>
     <script src="./js/slides.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/footer.js"></script>
-    <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
 </body>

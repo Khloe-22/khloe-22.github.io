@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Añadir el botón de CTA
         const ctaButton = document.createElement('a');
-        ctaButton.href = "./views/presupuesto.html";
+        ctaButton.href = "#";
         ctaButton.classList.add('price__cta');
-        ctaButton.textContent = "Pide presupuesto ahora";
+        ctaButton.textContent = "Precio Estándar";
         planElement.appendChild(ctaButton);
 
         // Añadir la tarjeta al contenedor principal

@@ -1,4 +1,4 @@
-// Funciones para gestionar cookies
+// Funciones para gestionar cookies  
 function setCookie(name, value, days) {
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -41,4 +41,19 @@ window.onload = function() {
         setCookie('cookieConsent', 'rejected', 30);
         cookieBanner.classList.add('hidden');
     });
+
+    // Usando cookie-session
+    app.use(session({
+    secret: 'mySecret',
+    cookie: {
+      sameSite: 'Strict' // O 'Lax' o 'None'
+    }
+  }));
+  
+  // Usando res.cookie
+  res.cookie('nombreCookie', 'valorCookie', { 
+    sameSite: 'Strict', // O 'Lax' o 'None'
+    secure: true // Necesario si usas SameSite=None
+  });
+  
 };
