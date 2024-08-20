@@ -17,21 +17,26 @@ body, html {
 }
 
 /* Estilos base */
+/* Header */
 .header {
-    background-color: #1D293F;
+    background-color: #1D293F; 
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
-    top: 0;
-    height: 12%;
     width: 100%;
-    z-index: 1000;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header__logo h2 {
@@ -39,37 +44,74 @@ body, html {
     font-weight: bold;
     color: #fff;
     margin: 0;
-    margin-left: 5px;
-    margin-top: 5px;
 }
 
 .header__nav {
     display: flex;
-    align-items: center;
 }
 
 .header__nav-list {
     display: flex;
     list-style: none;
-    padding: 0;
     margin: 0;
-    gap: 10px;
+    padding: 0;
 }
 
 .header__nav-link {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    margin-right: 35px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header__nav-link:hover {
+    background-color: #1D293F; 
+    color: #e1e0e0; 
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none;
+    background-color: #1f2838;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-link {
+    display: block;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #1D293F;
+}
+
+.mobile-nav-link:hover {
     background-color: #1D293F;
     color: #e1e0e0;
 }
 
 /* Estilos del menú hamburguesa */
-.menu-toggle {
+/*.menu-toggle {
     display: none;
 }
 
@@ -79,7 +121,8 @@ body, html {
     color: #fff;
     cursor: pointer;
     margin-right: 20px;
-}
+}*/
+
 /* Mapa */
 #map {
     height: 100%;

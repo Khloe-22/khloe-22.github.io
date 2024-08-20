@@ -11,26 +11,35 @@
 </head>
 <body>
 
-    <!--- Header -->
-    <header class="header">
-        <div class="container header__container">
-            <div class="header__logo">
-                <h2 class="privacidad">ZERO</h2>
-            </div>
- 
-            <nav class="header__nav">
-                <input type="checkbox" id="menu-toggle" class="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                <ul class="header__nav-list">
-                    <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
-                    <li><a href="./galeria.html" class="header__nav-link">Galeria</a></li>
-                    <li><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
-                    <li><a href="./presupuesto.html" class="header__nav-link">Presupuesto</a></li>
-                </ul>
-            </nav>
-            
+    <!-- Header -->
+<header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <h2 class="privacidad">ZERO</h2>
         </div>
-    </header>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="../index.html" class="header__nav-link">Inicio</a></li>
+                <li><a href="./galeria.html" class="header__nav-link">Galeria</a></li>
+                <li><a href="./contacto.html" class="header__nav-link">Contacto</a></li>
+                <li><a href="./presupuesto.html" class="header__nav-link">Presupuesto</a></li>
+            </ul>
+        </nav>
+        <!----
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    -->
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html" class="mobile-nav-link">Inicio</a></li>
+            <li><a href="./galeria.html" class="mobile-nav-link">Galeria</a></li>
+            <li><a href="./contacto.html" class="mobile-nav-link">Contacto</a></li>
+            <li><a href="./presupuesto.html" class="mobile-nav-link">Presupuesto</a></li>
+        </ul>
+    </nav>
+</header>
 
     <!-- Botón para mostrar/ocultar el footer en dispositivos móviles -->
     <button id="toggle-footer" class="footer__toggle">Mostrar/Ocultar Footer</button>

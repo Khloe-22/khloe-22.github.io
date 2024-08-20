@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     const formulario = document.getElementById('formulario-solicitud');
     const producto = document.getElementById('producto');
     const plazo = document.getElementById('plazo');
@@ -84,5 +84,32 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('menuToggle').addEventListener('click', function() {
     var navList = document.querySelector('.header__nav-list');
     navList.classList.toggle('active');
-});
+});*/
 
+     // Función para calcular el presupuesto
+     function calcularPresupuesto() {
+        const producto = parseFloat(document.getElementById('producto').value) || 0;
+        const plazo = parseInt(document.getElementById('plazo').value) || 0;
+
+        let extrasTotal = 0;
+        const checkboxes = document.querySelectorAll('input[name="extra"]:checked');
+        checkboxes.forEach((checkbox) => {
+            extrasTotal += parseFloat(checkbox.value);
+        });
+
+        const presupuesto = producto + extrasTotal;
+        document.getElementById('presupuesto').value = presupuesto ? `$${presupuesto.toFixed(2)}` : '';
+    }
+
+    // Evento para calcular el presupuesto al cambiar el producto, plazo o extras
+    document.getElementById('producto').addEventListener('change', calcularPresupuesto);
+    document.getElementById('plazo').addEventListener('input', calcularPresupuesto);
+    document.querySelectorAll('input[name="extra"]').forEach((checkbox) => {
+        checkbox.addEventListener('change', calcularPresupuesto);
+    });
+
+    // Inicializar el presupuesto
+    calcularPresupuesto();
+
+    // Script para actualizar el año actual en el footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();

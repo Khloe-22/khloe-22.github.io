@@ -12,7 +12,7 @@ document.querySelectorAll('.policy-section p, .legal-section p').forEach(content
 
 
 // Newsletter
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const newsletterPopup = document.getElementById("newsletterPopup");
     const closePopupButton = document.getElementById("closePopup");
     const newsletterForm = document.getElementById("newsletterForm");
@@ -77,4 +77,4 @@ document.addEventListener("DOMContentLoaded", function() {
             newsletterForm.reset();
         }, 3000);
     });
-});
+});*/

@@ -13,7 +13,7 @@ body {
 
 /* Estilo del header */
 .header {
-    background-color: #2a3b57; 
+    background-color: #1D293F; 
     color: #fff;
     padding: 20px 0;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -34,8 +34,8 @@ body {
 }
 
 .header__logo h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 1.7rem;
+    font-weight: 700;
     color: #fff;
     margin: 0;
 }
@@ -134,14 +134,15 @@ body {
 
 .footer__title-t{
     color: #fff;
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 30px;
 }
 
 .footer__section-title{
     color: #fff;
-    font-size: 1rem;
-    text-decoration:underline;
+    font-size: 0.9rem;
+    text-decoration: underline;
     margin-top: 0.5rem;
 }
 
@@ -149,13 +150,21 @@ body {
     margin-bottom: 0.2rem;
 }
 
-.footer__section-link{
+.footer__section-link {
     color: #fff;
     font-size: 1rem;
     font-weight: 200;
     text-decoration: none;
     margin: 5px;
     transition: color 0.3s ease-in-out;
+}
+
+.footer__section-link a{
+    margin-top: 2px;
+}
+
+.footer__section-link{
+    margin-top: 1rem;
 }
 
 .footer__section-link:hover {
@@ -187,7 +196,7 @@ i:hover{
 
 /** Newsletter **/
 /* Estilos del popup */
-.newsletter-popup {
+/*.newsletter-popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -223,10 +232,10 @@ i:hover{
 }
 
 .close-popup-button:hover {
-    color: #e74c3c; /* Rojo suave */
-}
+    color: #e74c3c; 
+}*/
 
-.footer__newsletter {
+/*.footer__newsletter {
     font-size: 1.8rem;
     color: #2c3e50;
     margin-bottom: 15px;
@@ -271,7 +280,7 @@ i:hover{
     color: #2ecc71;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-}
+}*/
 
 /** Footer coryright**/
 .footer__copy {

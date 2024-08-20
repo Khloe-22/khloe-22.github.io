@@ -59,49 +59,65 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__logo">
-                <h2>ZERO</h2>
-            </div>
+        <section class="footer__section"> 
+            <div class="footer__section-container container1">
+                <h2 class="footer__title-t">ZERO</h2>
+                <article class="footer_section">
+                    <h3 class="footer__section-title">Ubicacion</h3>
     
-            <div class="footer__sections">
-                <!-- Contacto Directo -->
-                <section class="footer__section">
-                    <h3 class="footer__section-title">Contacto</h3>
-                    <ul class="footer__list">
-                        <li><a href="mailto:jcorderog78@icloud.com" class="footer__section-link"><i class="fa-solid fa-envelope"></i> Email</a></li>
-                        <li><a href="tel:+020-1000-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> Teléfono</a></li>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <li><a href="https://goo.gl/maps/BoMW1fSVEovrzJyB8" class="footer__section-link"><i class="fa-solid fa-location-dot"></i>Hoogoorddreef 55, 1101 BE Amsterdam, Países Bajos </a></li>
+                    </ul>  
+    
+                    <h3 class="footer__section-title">Contacto Directo</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <li><a class="footer__section-link" href="mailto:go-4-fit@gmail.com" ><i class="fa-solid fa-envelope"></i>jcorderog78@icloud.com  </a></li>
+                            <li><a href="tel:+34-914-000000" class="footer__section-link"><i class="fa-solid fa-phone"></i> 020-100 000</a></li>
+                        </li>    
+                    </ul>  
+    
+                    <h3 class="footer__section-title">Descubre y Ahora</h3>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a href="../views/politicaAviso.html" class="footer__section-link">Politica de privacidad</a>
+                        </li>
                     </ul>
-                </section>
     
-                <!-- Enlaces Legales -->
-                <section class="footer__section">
-                    <h3 class="footer__section-title">Legal</h3>
-                    <ul class="footer__list">
-                        <li><a href="../views/politicaAviso.html" class="footer__section-link">Privacidad</a></li>
-                        <li><a href="../views/politicaAviso.html" class="footer__section-link">Cookies</a></li>
-                        <li><a href="../views/politicaAviso.html" class="footer__section-link">Aviso Legal</a></li>
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a href="../views/politicaAviso.html" class="footer__section-link">Cookies</a>
+                        </li>
                     </ul>
-                </section>
     
-                <!-- Redes Sociales -->
-                <section class="footer__section">
-                    <h3 class="footer__section-title">Síguenos</h3>
-                    <div class="social__container">
+                    <ul class="footer__section-table">
+                        <li class="footer__section-links">
+                            <a href="../views/politicaAviso.html" class="footer__section-link">Aviso Legal</a>
+                        </li>
+                    </ul>
+                </article>
+    
+                <!---Redes-->
+                <article class="footer__section">
+                    <h3 class="footer__section-title">Siguenos</h3>
+                    <div class="social__container"> 
                         <a href="https://www.facebook.com/profile.php?id=100010402808950" class="social__icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/ftness_life/" class="social__icon"><i class="fab fa-instagram"></i></a>
                         <a href="https://twitter.com/juliojump23" class="social__icon"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://www.linkedin.com/in/julio-cordero-guzman-3b873217b/" class="social__icon"><i class="fab fa-linkedin"></i></a>
                     </div>
-                </section>
+                </article>
             </div>
-        </div>
-    
+        </section>
         <div class="footer__copy">
-            <p>&copy; <span id="current-year"></span> Todos los derechos reservados.</p>
+            <a href="footer__copy-text" id="copyright"></a>
+            copyright 
+            <span id="current-year"></span>
+            Todos los derechos reservados
+            <a href="#" target="_blank"></a>
         </div>
     </footer>
-    
 
     <!--- Scripts -->
     <script src="../js/galeria.js"></script>
